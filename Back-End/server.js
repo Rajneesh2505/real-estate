@@ -13,12 +13,12 @@ app.use(cors())
 app.use(multer.array())
 
 //DataBase
-mongoose.connect("mongodb://127.0.0.1:27017/real-estate")
+mongoose.connect("mongodb+srv://Rajneesh:Rajneesh@insta.wzmicqy.mongodb.net/real-estate?retryWrites=true&w=majority&appName=insta")
 
 //port
-app.listen(3000,(err,data)=>{
-console.log("server")
-
+const PORT =process.env.PORT || 3000
+app.listen(PORT,()=>{
+    console.log("server start")
 })
 
 
