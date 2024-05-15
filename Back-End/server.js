@@ -16,7 +16,7 @@ app.use(multer.array())
 mongoose.connect("mongodb+srv://Rajneesh:Rajneesh@insta.wzmicqy.mongodb.net/real-estate?retryWrites=true&w=majority&appName=insta")
 
 //port
-const PORT =process.env.PORT || 3000
+const PORT =process.env.PORT ||3000
 app.listen(PORT,()=>{
     console.log("server start")
 })
